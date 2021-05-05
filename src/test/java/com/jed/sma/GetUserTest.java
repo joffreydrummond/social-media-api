@@ -1,7 +1,8 @@
 package com.jed.sma;
 
 import com.jed.sma.entity.User;
-import com.jed.sma.support.GetUserTestSupport;
+import com.jed.sma.controller.support.GetUserTestSupport;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class GetUserTest extends GetUserTestSupport {
 
+	@Disabled
 	@Test
 	void test() {
     System.out.println(getBaseUri());

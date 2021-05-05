@@ -1,4 +1,4 @@
-package com.jed.sma.support;
+package com.jed.sma.controller.support;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,6 @@ public class BaseTest {
   private TestRestTemplate restTemplate;
 
   protected String getBaseUri() {
-    return String.format("http://localhost:%d/users", serverPort);
+    return String.format("http://localhost:%d/v1/users", serverPort);
   }
 }
